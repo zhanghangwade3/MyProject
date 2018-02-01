@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/re_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/jiantou" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="@color/APP_EC801B"
+            android:textSize="@dimen/size_Title" />
+
+        <TextView
+            android:id="@+id/tv_baocun"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/APP_EC801B"
+            android:textSize="@dimen/size_Desc"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_money"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/re_title"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/app_white">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_money"
+            android:background="@color/app_white"
+            android:text="上传照片"
+            android:textColor="@color/item_title"
+            android:textSize="@dimen/size_Content" />
+
+        <com.all.app.utils.CircularImage
+            android:id="@+id/iv_right2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_bg"></View>
+
+    <RelativeLayout
+        android:id="@+id/re_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/re_money"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/app_white">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_service"
+            android:background="@color/app_white"
+            android:text="姓名"
+            android:textColor="@color/item_title"
+            android:textSize="@dimen/size_Content" />
+
+        <com.all.app.utils.ContainsEmojiEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tv_name"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:cursorVisible="false"
+            android:hint="请输入姓名"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:textColor="@color/item_desc"
+            android:textSize="@dimen/size_Desc" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_bg"></View>
+
+
+    <RelativeLayout
+        android:id="@+id/re_renzheng"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/re_name"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/app_white">
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_service"
+            android:background="@color/app_white"
+            android:text="年龄"
+            android:textColor="@color/item_title"
+            android:textSize="@dimen/size_Content" />
+
+        <com.all.app.utils.ContainsEmojiEditText
+            android:id="@+id/et_peo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tv_number"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:cursorVisible="false"
+            android:hint="请输入年龄"
+            android:inputType="number"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:textColor="@color/item_desc"
+            android:textSize="@dimen/size_Desc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_gong"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/re_renzheng"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/app_white">
+
+        <TextView
+            android:id="@+id/tv_gong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_service"
+            android:background="@color/app_white"
+            android:text="工龄"
+            android:textColor="@color/item_title"
+            android:textSize="@dimen/size_Content" />
+
+        <com.all.app.utils.ContainsEmojiEditText
+            android:id="@+id/et_gong"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tv_gong"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:cursorVisible="false"
+            android:hint="请输入工龄"
+            android:inputType="number"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:textColor="@color/item_desc"
+            android:textSize="@dimen/size_Desc" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_logout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/shape_baojia"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/app_white"
+        android:textSize="16sp" />
+</RelativeLayout>

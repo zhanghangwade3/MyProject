@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white"
+    android:orientation="vertical">
+
+    <FrameLayout
+         android:id="@+id/fl_content"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_above="@+id/re_bottom"
+        >
+    </FrameLayout>
+
+    <RelativeLayout
+       android:id="@+id/re_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="63dip"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/ll_center"
+            android:layout_width="65dip"
+            android:layout_height="74dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_index_tab_center_bg">
+
+            <TextView
+                android:layout_width="65dip"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/app_white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="-5dip"
+            android:layout_toLeftOf="@id/ll_center"
+            android:background="@color/app_white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/app_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="0dip"
+                android:paddingRight="10dip">
+
+                <LinearLayout
+                    android:id="@+id/ll_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="3dip">
+
+                    <CheckBox
+                        android:id="@+id/ck_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:checked="true"
+                        android:clickable="false"
+                        android:drawableTop="@drawable/home_selector"
+                        android:gravity="center"
+                        android:text="首页"
+                        android:textColor="@color/index_tab_colors"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_classify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="3dip">
+
+                    <CheckBox
+                        android:id="@+id/ck_classify"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:clickable="false"
+                        android:drawableTop="@drawable/classify_selector"
+                        android:gravity="center"
+                        android:paddingLeft="0dp"
+                        android:text="订单"
+                        android:textColor="@color/index_tab_colors"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="-5dip"
+            android:layout_toRightOf="@id/ll_center"
+            android:background="@color/app_white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/app_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingRight="0dip">
+
+                <LinearLayout
+                    android:id="@+id/ll_market"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="3dip">
+
+                    <CheckBox
+                        android:id="@+id/ck_market"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:clickable="false"
+                        android:drawableTop="@drawable/market_selector"
+                        android:gravity="center"
+                        android:paddingLeft="0dp"
+                        android:text="发现"
+                        android:textColor="@color/index_tab_colors"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="3dip">
+
+                    <CheckBox
+                        android:id="@+id/ck_mine"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:clickable="false"
+                        android:drawableTop="@drawable/mine_selector"
+                        android:gravity="center"
+                        android:paddingLeft="0dp"
+                        android:text="我的"
+                        android:textColor="@color/index_tab_colors"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/ck_recevice"
+            android:layout_width="50dip"
+            android:layout_height="49dip"
+            android:layout_centerInParent="true"
+            android:button="@null"
+            android:background="@drawable/shape_index_tab_center_btn"
+            android:gravity="center"
+            android:text="接单"
+            android:textColor="@color/app_white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

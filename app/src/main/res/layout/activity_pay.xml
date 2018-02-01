@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/pay_input"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_round_dialog"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pay_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/pay_title"
+            android:textColor="#404040"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1dfdf" />
+
+       <!-- <com.all.app.utils.PwdEditText
+            android:id="@+id/pet_pwd"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:digits="0123456789"
+            android:focusable="true"
+            android:background="@color/app_bg"
+            android:cursorVisible="false"
+            android:maxLength="6"
+            android:enabled="true"
+            android:inputType="number"
+            />-->
+          <EditText
+              android:id="@+id/pet_pwd"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginTop="20dp"
+              android:background="@drawable/shape_mima"
+              android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+              android:cursorVisible="true"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/pay_cancel"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_baojia"
+                android:gravity="center"
+                android:text="@string/pay_cancel"
+                android:textColor="@color/app_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pay_sure"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_que"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/app_white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

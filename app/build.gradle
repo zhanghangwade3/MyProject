@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'wqaz'
+            keyPassword 'wqaz369'
+            //storeFile file('F:/App/wqaz.jks')
+            storeFile file('C:\\Users\\Administrator\\Desktop\\App\\wqaz.jks')
+            storePassword 'wqaz369'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    defaultConfig {
+        applicationId "com.all.app"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+            minifyEnabled false//设置是否开启混淆 true：混淆 false：不混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        release {
+            //signingConfig android.signingConfigs.config
+            minifyEnabled true//设置是否开启混淆 true：混淆 false：不混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //注解库
+    //okhttp请求框架
+    //阿里巴巴解析库
+    //glide图片处理
+    compile files('libs/AMap_Location_V3.3.0_20170118.jar')
+    compile files('libs/jcore-android_v1.1.2.jar')
+    compile files('libs/MobCommons-2017.0412.1554.jar')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.alibaba:fastjson:1.2.30'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    apt 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile files('libs/alipaySingle-20170510.jar')
+}

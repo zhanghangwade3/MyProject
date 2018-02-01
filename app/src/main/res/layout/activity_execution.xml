@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/re_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_white"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/jiantou" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="待施工"
+            android:textColor="@color/APP_EC801B"
+            android:textSize="@dimen/size_Title" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/re_title"
+        android:background="@color/app_bg" />
+
+    <com.all.app.utils.pullrefresh.PullToRefreshListView
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv"
+        android:cacheColorHint="@null"
+        android:divider="@color/transparent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dip"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:id="@+id/iv_niu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/sf"
+         android:visibility="invisible"
+        />
+</RelativeLayout>

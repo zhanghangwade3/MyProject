@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/re_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/jiantou" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textColor="@color/APP_EC801B"
+            android:textSize="@dimen/size_Title" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/re_phone"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/re_title"
+        android:layout_marginTop="8dp"
+        android:background="@color/app_white">
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:digits="1234567890"
+            android:drawablePadding="10dp"
+            android:hint="请输入原始密码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:textColor="@color/item_title"
+            android:textColorHint="@color/item_desc"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_username_del"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imagec"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/mshanchu"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_ma"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/re_phone"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/app_white">
+
+
+        <EditText
+            android:id="@+id/et_ma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_ma"
+            android:background="@null"
+            android:digits="1234567890"
+            android:drawablePadding="10dp"
+            android:hint="设置新密码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:textColor="@color/item_title"
+            android:textColorHint="@color/item_desc"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_sh"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/re_ma"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/app_white">
+
+
+        <EditText
+            android:id="@+id/et_zheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:digits="1234567890"
+            android:drawablePadding="10dp"
+            android:hint="确认新密码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:textColor="@color/item_title"
+            android:textColorHint="@color/item_desc"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_ti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/re_sh"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="提示：如果您忘记了原始密码，请在“设置”里点击退出登录后找回密码"
+            android:textColor="@color/item_desc"
+            android:textSize="@dimen/size_Desc" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/btn_ti_bg"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/app_white"
+        android:textSize="@dimen/size_Desc" />
+
+</RelativeLayout>

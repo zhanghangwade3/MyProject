@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white">
+
+    <RelativeLayout
+        android:id="@+id/re_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/jiaoyib" />
+
+        <LinearLayout
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/iv_pic"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_white"
+                    android:text="南宁市马山县门柜"
+                    android:textColor="@color/item_content"
+                    android:textSize="@dimen/size_Content" />
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:layout_marginTop="5dp"
+
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+       >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@color/app_white"
+                    android:text="4/16"
+                    android:textColor="@color/item_desc"
+                    android:textSize="@dimen/size_Small" />
+                />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_iv"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/tv_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_order"
+                android:gravity="center"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/size_Desc" />
+            />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/re_content"
+        android:background="@color/app_bg"
+
+        />
+
+
+</RelativeLayout>

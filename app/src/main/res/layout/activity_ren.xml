@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white">
+
+    <RelativeLayout
+        android:id="@+id/re_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/jiantou" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="认证管理"
+            android:textColor="@color/APP_EC801B"
+            android:textSize="@dimen/size_Title" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vi2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/re_title"
+        android:background="@color/app_bg"></View>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vi2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:drawableLeft="@drawable/xinghao"
+                android:paddingTop="10dp"
+                android:text="实名认证"
+                android:textColor="@color/item_title"
+                android:textSize="@dimen/size_Desc"></TextView>
+
+            <View
+                android:id="@+id/iv_one"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/APP_EC801B" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:clickable="false"
+            >
+
+            <TextView
+                android:id="@+id/tv_team3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:drawableLeft="@drawable/xinghao"
+                android:text="资格认证"
+                android:textColor="@color/item_title"
+                android:textSize="@dimen/size_Desc" />
+
+            <View
+                android:id="@+id/iv_two"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_team3"
+                android:layout_centerHorizontal="true"
+                android:background="@color/APP_EC801B"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:clickable="false"
+            >
+
+            <TextView
+                android:id="@+id/tv_team4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="货车认证"
+                android:textColor="@color/item_title"
+                android:textSize="@dimen/size_Desc" />
+
+            <View
+                android:id="@+id/iv_thrid"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_team4"
+                android:layout_centerHorizontal="true"
+                android:background="@color/APP_EC801B"
+                android:visibility="invisible" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:clickable="false"
+            >
+
+            <TextView
+                android:id="@+id/tv_team5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="企业认证"
+                android:textColor="@color/item_title"
+                android:textSize="@dimen/size_Desc" />
+
+            <View
+                android:id="@+id/iv_thrid3"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_team4"
+                android:layout_centerHorizontal="true"
+                android:background="@color/APP_EC801B"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ll_title"
+        android:background="@color/app_bg"></View>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv"
+        ></FrameLayout>
+</RelativeLayout>

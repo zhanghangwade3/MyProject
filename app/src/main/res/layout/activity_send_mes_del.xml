@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/re_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:src="@drawable/jiantou" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="发件箱详情"
+                android:textColor="@color/APP_EC801B"
+                android:textSize="@dimen/size_Title" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/re_title"
+            android:background="@color/app_bg">
+
+        </View>
+
+
+        <TextView
+            android:id="@+id/tv_news1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="安装衣柜"
+            android:textColor="@color/item_content"
+            android:textSize="@dimen/size_Content" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:src="@drawable/xuxianm" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_news4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="收件人:"
+                android:textColor="@color/item_desc"
+                android:textSize="@dimen/size_Content" />
+
+
+            <TextView
+                android:id="@+id/tv_number4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_news4"
+                android:gravity="center"
+                android:text="18752636654"
+                android:textColor="@color/item_desc"
+                android:textSize="@dimen/size_Content" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="时    间:"
+                android:textColor="@color/item_desc"
+                android:textSize="@dimen/size_Content" />
+
+
+            <TextView
+                android:id="@+id/tv_gao3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_time"
+                android:gravity="center"
+                android:text="2017-04-16"
+                android:textColor="@color/item_desc"
+                android:textSize="@dimen/size_Content" />
+
+            <TextView
+                android:id="@+id/tv_gao4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_gao3"
+                android:gravity="center"
+                android:text="23:00:15"
+                android:textColor="@color/item_desc"
+                android:textSize="@dimen/size_Content" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_gao5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="来    自:"
+                android:textColor="@color/item_desc"
+                android:textSize="@dimen/size_Content" />
+
+
+            <TextView
+                android:id="@+id/tv_gao6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_gao5"
+                android:gravity="center"
+                android:text="15866324475"
+                android:textColor="@color/item_desc"
+                android:textSize="@dimen/size_Content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:id="@+id/tv_gao7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:lineSpacingExtra="5dp"
+            android:background="@drawable/btn_text_bg"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/app_gao"
+            android:textColor="@color/item_desc"
+            android:textSize="@dimen/size_Desc" />
+
+    </RelativeLayout>
+</LinearLayout>

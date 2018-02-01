@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>帮助</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <style>
+        *{margin: 0;padding: 0;list-style: none;}
+        .box{
+            width: 95%;
+            margin: 0 auto;
+            padding-bottom: 1rem;
+        }
+        .point{
+            width: 0.6rem;
+            height: 0.6rem;
+            margin: 0.2rem 0.3rem auto 0.3rem;
+            float: left;
+            border-radius: 50%;
+            background: #ff8e09;
+        }
+        .title{
+            width: auto;
+            line-height: 1.3rem;
+            font-weight: bold;
+            font-size: 0.8rem;
+            float: left;
+        }
+        .text{
+            color: #3e3e3e;
+            line-height: 1rem;
+            font-size: 0.7rem;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p style="font-size: 18px;color: #303030;height: 1.5rem;line-height:1.5rem;margin:0.3rem auto auto 1rem;">订单流程</p>
+        <div style="background: #EFEFEF;height: 0.5px;margin: 5px 0;"></div>
+        <div class="box">
+            <span class="point"></span>
+            <span class="title">确认中标：</span>
+            <span class="text">即提交报价后，客户选择您中标<wbr/>后会显示在确认中标订单里面，您需要确认后开始施工；如果中标后几个小时没有确认，系统有可能会派单给其他安装队；请及时留意订单变化；</span>
+        </div>
+        <div class="clear"></div>
+        <div class="box">
+            <span class="point"></span>
+            <span class="title">待提货：</span>
+            <span class="text">即确认中标后，如果需要提货配送的订单，会自动进入待提货订单里，在代提货里操作订单提货状态并上传提货时产品包外包装照片两张（包括异常签收标记）；</span>
+        </div>
+        <div class="clear"></div>
+        <div class="box">
+            <span class="point"></span>
+            <span class="title">待施工：</span>
+            <span class="text">即只安装订单确认中标后，或提货状态操作成功后，都会自动进入待施工订单里，完成后在待施工中操作施工状态，并上传至少两张照片和一张验收单；</span>
+        </div>
+        <div class="clear"></div>
+        <div class="box">
+            <span class="point"></span>
+            <span class="title">待验收：</span>
+            <span class="text">在所有状态操作完成后会进入待验收订单里，师傅可以在待验收订单里确认中标价，等待商家操作验收并最终付款；</span>
+        </div>
+        <div class="clear"></div>
+        <div class="box">
+            <span class="point"></span>
+            <span class="title">已完成：</span>
+            <span class="text">在商家确认付款后，订单就会进入已完成订单里，在已完成订单里可以查看订单评价情况；（请保持良好信誉，这将是你能否接到更多的订单的凭证）</span>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    window.addEventListener(('orientationchange' in window ? 'orientationchange' : 'resize'), (function() {
+        function c() {
+            var d = document.documentElement;
+            var cw = d.clientWidth || 750;
+            d.style.fontSize = (20 * (cw / 375)) > 40 ? 40 + 'px' : (20 * (cw / 375)) + 'px';
+        }
+        c();
+        return c;
+    })(), false);
+</script>

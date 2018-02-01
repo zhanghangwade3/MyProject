@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/re_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/jiantou" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="问题详情"
+                    android:textColor="@color/APP_EC801B"
+                    android:textSize="@dimen/size_Title" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/app_bg" />
+
+            <TextView
+                android:id="@+id/tv_titl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="西安市凤城十二路办公家具安装"
+                android:textColor="@color/item_title"
+                android:textSize="@dimen/size_Content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/app_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp">
+
+                <TextView
+                    android:id="@+id/tv_news1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="任务编号："
+                    android:textColor="@color/item_title"
+                    android:textSize="@dimen/size_Desc" />
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_news1"
+                    android:gravity="center"
+                    android:text="123456789"
+                    android:textColor="@color/item_desc"
+                    android:textSize="@dimen/size_Desc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="商家工号："
+                    android:textColor="@color/item_title"
+                    android:textSize="@dimen/size_Desc" />
+
+                <TextView
+                    android:id="@+id/tv_pric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_price"
+                    android:gravity="center"
+                    android:text="4556566"
+                    android:textColor="@color/item_desc"
+                    android:textSize="@dimen/size_Desc" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/app_bg" />
+
+            <TextView
+                android:id="@+id/tv_wen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/tv_price"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:text="问题描述"
+                android:textColor="@color/item_title"
+                android:textSize="@dimen/size_Desc" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:lines="2"
+                android:lineSpacingExtra="3dp"
+                android:paddingTop="5dp"
+                android:text="问题描述介绍的附件二房东说看见飞机就花费金额为开发和客户"
+                android:textColor="@color/item_title"
+                android:textSize="@dimen/size_Desc" />
+
+            <com.all.app.utils.XGridView
+                android:id="@+id/view_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/transparent"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:paddingBottom="10dp"
+                android:verticalSpacing="5dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/app_bg" />
+
+            <LinearLayout
+                android:id="@+id/ll_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_advice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tv_price"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:text="处理意见"
+                    android:textColor="@color/item_title"
+                    android:textSize="@dimen/size_Desc" />
+
+                <TextView
+                    android:id="@+id/tv_cont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:lines="2"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingTop="5dp"
+                    android:text="问题描述介绍的附件二房东说看见飞机就花费金额为开发和客户"
+                    android:textColor="@color/item_title"
+                    android:textSize="@dimen/size_Desc" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/re_cancle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/vi3"
+                android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/other_cancle"
+                    android:layout_width="95dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/btn_wen_bg"
+                    android:gravity="center"
+                    android:text="已解决"
+                    android:textColor="@color/APP_EC801B"
+                    android:textSize="@dimen/size_Desc" />
+
+                <TextView
+                    android:id="@+id/phone_kefu"
+                    android:layout_width="95dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:background="@drawable/btn_wen_bg"
+                    android:gravity="center"
+                    android:text="联系客服"
+                    android:textColor="@color/APP_EC801B"
+                    android:textSize="@dimen/size_Desc" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

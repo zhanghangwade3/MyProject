@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@color/app_white"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="办公家具"
+        android:textColor="@color/item_title"
+        android:textSize="@dimen/size_Desc" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/app_bg"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.03"
+
+            android:src="@drawable/zzhanxaong" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/zzhanxaong"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/zzhanxaong"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/iv4"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/zzhanxaong"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv5"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/zzhanxaong"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv6"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/zzhanxaong"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white">
+
+    <TextView
+        android:id="@+id/tv_fu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@color/app_white"
+        android:padding="5dp"
+        android:text="附件1"
+        android:textColor="@color/APP_EC801B"
+        android:textSize="@dimen/size_Desc" />
+
+</RelativeLayout>

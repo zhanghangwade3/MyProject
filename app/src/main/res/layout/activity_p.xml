@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="320dp"
+
+        >
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shili_zheng"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/imageb"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shili_bei"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shili_shou"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_maioshu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/app_white"
+            android:padding="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/app_white"
+            android:padding="2dp"
+            android:textSize="16dp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/exit_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/xdg_image_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+
+                <Button
+                    android:id="@+id/photograph"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#0000"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="拍照"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/size_Title" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#C0C0C0" />
+
+                <Button
+                    android:id="@+id/album"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#0000"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="从手机相册选择"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/size_Title" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/xdg_image_bg"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="取消"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/size_Title"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

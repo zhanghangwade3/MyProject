@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题字体大小 -->
+    <dimen name="size_Title">18dip</dimen>
+    <!-- 内容字体大小 -->
+    <dimen name="size_Content">16dip</dimen>
+    <!-- 描述说明字体大小 -->
+    <dimen name="size_Desc">14dip</dimen>
+    <!-- 最小字体 -->
+    <dimen name="size_Small">12dip</dimen>
+    <!-- 线条的宽高 -->
+    <dimen name="size_Line">0.5dip</dimen>
+    <!-- 线条的宽高 -->
+    <dimen name="size_big">22dip</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin_n">16dp</dimen>
+    <dimen name="activity_vertical_margin_m">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margi">16dp</dimen>
+    <dimen name="activity_vertical_margi">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_size">96dp</dimen>
+    <dimen name="space_size">2dp</dimen>
+    <dimen name="folder_cover_size">72dp</dimen>
+</resources>

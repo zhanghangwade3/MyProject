@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/app_white"
+            android:layout_marginTop="0.5dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="10dp"
+            >
+
+                >
+                <ImageView
+                    android:id="@+id/iv_zhengp"
+                    android:layout_width="160dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sffanmian"
+                    />
+                <TextView
+                    android:id="@+id/tv_zheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/app_white"
+                    android:text="请上传营业执照"
+                    android:textColor="@color/item_desc"
+                    android:textSize="@dimen/size_Desc" />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/app_white"
+            android:layout_marginTop="0.5dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="10dp"
+            >
+
+                <ImageView
+                    android:id="@+id/iv_car"
+                    android:layout_width="160dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/dianpu"
+                    />
+
+            <TextView
+                android:id="@+id/textVi4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/app_white"
+                android:text="请上传营业场所照片"
+                android:textColor="@color/item_desc"
+                android:textSize="@dimen/size_Desc" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:id="@+id/tv_ti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="如果您是企业服务商请进行"
+                android:textColor="@color/item_desc"
+                android:textSize="@dimen/size_Desc" />
+
+            <TextView
+                android:id="@+id/tv_tishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="企业认证"
+                android:textColor="@color/APP_EC801B"
+                android:textSize="@dimen/size_Desc" />
+            <TextView
+                android:id="@+id/tv_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/shape_round_ren"
+                android:text="只是看看"
+                android:textColor="@color/APP_EC801B"
+                android:textSize="@dimen/size_Desc" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_baojia"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="提交认证"
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/size_Desc" />
+
+
+    </LinearLayout>
+</ScrollView>

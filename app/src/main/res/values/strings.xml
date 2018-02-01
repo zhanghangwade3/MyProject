@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">万企安装</string>
+    <string name="app_money">万装钱包是万装为所有会员提供的电子账户，可实现交易，余额查询和提现等功能</string>
+    <string name="app_gao">您的稿件被雇主中标，感谢您对万企安装家具平台的信任，如有特殊情况，请致电客服，我们将协助您解决问题。</string>
+    <string name="app_service">请选择自己能提供服务的区域（支持多选）</string>
+    <string name="app_service2">待报价订单将根据你提供服务的区域进行推送</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="folder_all">所有图片</string>
+    <string name="preview">预览</string>
+    <string name="msg_no_camera">相机未找到</string>
+    <string name="msg_amount_limit">最多可选择5张</string>
+    <string name="bank_tishi">预计三个工作日内到账，提现手续费由平台承担!</string>
+    <string name="count_down">s后重发</string>
+    <string name="pay_title">请输入支付密码</string>
+    <string name="pay_sure">确认支付</string>
+    <string name="pay_cancel">取消</string>
+    <string name="pay_content">消费金额：34.50元</string>
+    <string name="app_name2">PayUI</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="baozhengjing">可以承接单项任务额度6000元以内</string>
+    <string name="baozhengjing7">可以承接单项任务额度10000元以内</string>
+    <string name="baozhengjing8">可以承接单项任务额度30000元以内</string>
+    <string name="baozhengjing9">可以承接单项任务额度不限</string>
+    <string name="baozhengjing10">可以承接由平台沟通指派</string>
+    <string name="baozhengjing2">了解并同意《万企家具安装平台合约师傅合作协议》</string>
+    <string name="baozhengjing3">1.保证金用于师傅未履行承诺服务协议时对用户的赔偿金比例，以处罚条例为主。</string>
+    <string name="baozhengjing4">2.保证金最低缴纳金额为2000，一旦缴纳成功即进行冻结。</string>
+    <string name="baozhengjing5">3.保证金缴纳30天后可自主选择申请退还。</string>
+    <string name="baozhengjing6">4.缴纳保证金的师傅将在网站宣传及用户雇佣时进行优先推荐。</string>
+</resources>

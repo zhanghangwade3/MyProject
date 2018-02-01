@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/app_white"
+    >
+
+   <CheckBox
+       android:id="@+id/ck_value"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginBottom="5dp"
+       android:paddingTop="2dp"
+       android:paddingBottom="2dp"
+       android:button="@null"
+       android:clickable="false"
+       android:gravity="center"
+       android:lines="2"
+       android:text="暂无"
+       android:background="@drawable/selector_service"
+       android:textColor="@color/selector_type"
+       android:textSize="@dimen/size_Small"
+       />
+</RelativeLayout>

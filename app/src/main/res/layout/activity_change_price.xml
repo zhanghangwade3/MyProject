@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_white"
+    >
+    <RelativeLayout
+        android:id="@+id/re_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/jiantou" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="修改报价"
+            android:textColor="@color/APP_EC801B"
+            android:textSize="@dimen/size_Title" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_bg"
+        />
+    <TextView
+        android:id="@+id/tv_titl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="杭州办公家具安装"
+        android:textColor="@color/item_title"
+        android:textSize="@dimen/size_Content"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_bg"
+        />
+
+    <RelativeLayout
+        android:id="@+id/re_xiu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_news1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:gravity="center"
+            android:text="当前任务报价"
+            android:textColor="@color/item_title"
+            android:textSize="@dimen/size_Desc"
+            android:layout_marginStart="21dp" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_bg"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.all.app.utils.ContainsEmojiEditText
+            android:id="@+id/et_an"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_text_bg"
+            android:layout_centerVertical="true"
+            android:digits="1234567890"
+            android:layout_toRightOf="@+id/person"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:maxLength="18"
+            android:singleLine="true"
+            android:textColor="@color/APP_EC801B"
+            android:textSize="@dimen/size_Desc"
+            />
+
+
+            <com.all.app.utils.ContainsEmojiEditText
+                android:id="@+id/et_yun"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_text_bg"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="18"
+                android:singleLine="true"
+                android:textColor="@color/APP_EC801B"
+                android:textSize="@dimen/size_Desc" />
+
+            <com.all.app.utils.ContainsEmojiEditText
+                android:id="@+id/et_yun2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@drawable/btn_text_bg"
+                android:digits="0123456789"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="18"
+                android:singleLine="true"
+                android:textColor="@color/APP_EC801B"
+                android:textSize="@dimen/size_Desc"
+                />
+
+
+        <com.all.app.utils.ContainsEmojiEditText
+            android:id="@+id/et_other"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_text_bg"
+            android:layout_centerVertical="true"
+            android:digits="0123456789"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:maxLength="18"
+            android:singleLine="true"
+            android:textColor="@color/APP_EC801B"
+            android:textSize="@dimen/size_Desc"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_anp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="安装费"
+            android:textColor="@color/item_desc"
+            android:textSize="@dimen/size_Desc" />
+
+            <TextView
+                android:id="@+id/tv_yunp"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="运输费"
+                android:textColor="@color/item_desc"
+                android:textSize="@dimen/size_Desc" />
+
+            <TextView
+                android:id="@+id/tv_yun2p"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="搬运费"
+                android:textColor="@color/item_desc"
+                android:textSize="@dimen/size_Desc" />
+
+        <TextView
+            android:id="@+id/otherp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tv_bao"
+            android:gravity="center"
+            android:text="其它"
+            android:textColor="@color/item_desc"
+            android:textSize="@dimen/size_Desc" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_bg"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/he"
+        android:background="@color/app_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:text="报价默认已含10%平台服务费，中标后，必须按时完工！"
+            android:textColor="@color/big_red"
+            android:textSize="@dimen/size_Small" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_zhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_price"
+            android:gravity="center"
+            android:text="中标价合计："
+            android:textColor="@color/item_title"
+            android:textSize="@dimen/size_Desc" />
+
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/tv_danwei"
+            android:gravity="center"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/APP_EC801B"
+            android:textSize="@dimen/size_Desc" />
+
+        <TextView
+            android:id="@+id/tv_danwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="元"
+            android:textColor="@color/item_desc"
+            android:textSize="@dimen/size_Desc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+
+        >
+
+        <TextView
+            android:id="@+id/other_cancle"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/btn_wen_bg"
+            android:gravity="center"
+            android:text="取消修改"
+            android:textColor="@color/APP_EC801B"
+            android:textSize="@dimen/size_Desc"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/other_price"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/btn_wen_bg"
+            android:gravity="center"
+            android:text="确认修改"
+            android:textColor="@color/APP_EC801B"
+            android:textSize="@dimen/size_Desc" />
+    </RelativeLayout>
+</LinearLayout>
